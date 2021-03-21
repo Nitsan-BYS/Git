@@ -1,0 +1,262 @@
+
+header, main, nav, footer, section, article{
+    display: block;
+}
+*{margin: 0; padding: 0;}
+
+article {
+    padding-left: 50px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: #F5F4F4;
+}
+
+.center {
+    margin-right: 30px;
+}
+
+.centerpic {
+    margin-left: 90px;
+    margin-top: 80px;
+}
+.centerpic1 {
+    margin-left: 90px;
+    margin-top: 80px;
+}
+.centerpic2 {
+    margin-left: 105px;
+    margin-top: 80px;
+}
+.centerpic3 {
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+body{
+    color:#ffffff;
+    background-color:#ED4C5C;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+nav {
+    margin-left: 51.45px;
+}
+
+#logo {
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 45px;
+    margin-left: 49px;
+    display: block;
+}
+
+#logo span {
+    font-family: 'Lato', sans-serif;
+    margin-left: 50px;
+    line-height: 76px;
+    color: #ffffff;
+}
+
+a:hover {
+    color:rgb(194, 186, 186);
+}
+
+.image {
+    border-radius: 8px;
+    margin-left: 51.45px;
+}
+.button {
+    background-color: #ffffff;
+    color:grey;
+    font-family:'Lato', sans-serif;
+    font-size: 15px;
+    border:none;
+    padding: 15px 32px;
+    margin-left: 51.45px;
+    border-radius: 8px;
+}
+
+header {
+    background-color:#ED4C5C;
+    width: 100;
+    padding-top: 59px;
+    margin-left: 51.45px;
+}
+
+main {
+    padding-top:50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.picsSection1 {
+    border-radius: 8px;
+}
+
+.picsSection2 {
+    margin-left: 30px;
+    border-radius: 8px;
+    
+}
+.picsSection3 {
+    margin-left: 30px;
+    border-radius: 8px;
+    box-shadow:0px 1px 60px rgb(185, 181, 181);
+} 
+
+.redLink {
+    color:#ED4C5C;
+}
+
+footer {
+    margin-left: 51.45px;
+}
+
+.pics {
+    color:#ED4C5C;
+    padding-left: 50px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.pic1 {
+    color:#ED4C5C;
+    padding-left: 98px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 103px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: absolute;
+    box-shadow: 0px 5px 70px grey;
+    top: 1095px;
+    left: 102px;
+}
+
+.pic2 {
+    color:#ED4C5C;
+    padding-left: 112px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 123px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: absolute;
+    box-shadow: 0px 5px 70px grey;  
+    top: 1095px;
+    left: 484px;
+}
+
+.pic3 {
+    color:#ED4C5C;
+    padding-left: 118px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 97px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 30px rgb(199, 199, 199);  
+    position: absolute;
+    top: 1095px;
+    left: 865px;
+}
+
+.picLinks {
+    align-content: center;
+    /* position: ; */
+    color:#000000;
+    background-color: #ffffff;
+    left: 100px;
+    top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-top:4px;
+    border-radius: 4px;
+}
+
+a.articleStyle {
+    color:#000000;
+    padding-top: 100px;
+    margin-top: 150px;
+    margin-left: 85px;
+    width: 1500px;
+    height: 657px;
+    left: 0px;
+    top: 1114px;
+}
+
+a.articleStyle1 {
+    color:#000000;
+    padding-top: 70px;
+    margin-left: 68px;
+    width: 1520px;
+    height: 657px;
+    left: 0px;
+    top: 1114px;
+}
+.rects {
+    margin-left: 45px;
+}
+
+.rects1 {
+    margin-left: 85px;
+}
+
+.rects2 {
+    margin-left: 61px;
+}
+
+.rects3 {
+    margin-left: 57px;
+}
+
+.rectangle {
+    height: 226px;
+    width: 255px;
+    background-color: #ffffff;
+    left: 50px;
+    top: 1474px;
+    margin-left: 60px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+table {
+    border: 1px;
+}
+
+.rectangle1 {
+    height: 216px;
+    width: 255px;
+    background-color: #ffffff;
+    left: 50px;
+    top: 1474px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-top: 11px;
+    /* margin-bottom: /px; */
+    display: inline-block;
+}
+.navStyle {
+    margin-bottom: 30px;
+}
+
+a.imgAlign {
+    position:absolute;
+}
+
+p {
+    color:#000000;
+    font-size: small;
+}
