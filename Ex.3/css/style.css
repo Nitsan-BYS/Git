@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------- Layout 1 -------*/
+
+header, nav, main, footer, aside{
+    display: block;
+    width: 100%;
+}
+
+#logo{
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin: 59px auto;
+    display: block;
+}
+
+/* HEADER */ 
+header{
+    height: 194px;
+    background-color: #d495ab;
+    display: flex;  
+}
+
+/* NAV */
+nav{
+    height: 61px;
+    display: flex;
+    background-color: rgb(250, 218, 218);
+    align-items: center;
+}
+
+ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#selected{
+    background-color: #ffc4da;
+    color: white;
+    margin-left: 100px;
+    padding: 0px 60px 4px;
+}
+
+#selected:hover{
+    color:rgb(121, 121, 121);
+}
+
+nav a{
+
+    margin-left: 90px;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+a:hover{
+
+    color:rgb(121, 121, 121);
+}
+
+#wrapper{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* ASIDE */
+
+.background{
+    background-color: #fcd0e0;
+    width: 244px;
+    height: 695px;
+    float: right;
+    margin-right: 200px;
+}
+
+.background div{
+    height: 59px;
+    width: 148px;
+    background-color: #864c61;
+    position: relative;
+    top: 220px;
+    left: 80px;
+}
+
+.left_container div{
+    height: 100px;
+    width: 100px;
+    background-color: #864c61;
+}
+ 
+.right_container div{
+    height: 100px;
+    width: 100px;
+    background-color: #864c61;
+}
+
+.left_container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 28px 40px;
+    height: 238px;
+    width: 238px;
+    margin-left: 200px;
+}
+
+.right_container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: right;
+    position: relative;
+    height: 238px;
+    width: 238px;
+    left: 300px;
+    top: 170px;
+}
+
+/* MAIN */
+main{
+    width: 756px;
+    height: 696px;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+footer{
+    background-color: #d495ab;
+    height: 50px;
+}
+
+/*------- Layout 2 -------*/
+
+#selected1{
+    background-color: #ffc4da;
+    color: white;
+    padding: 8px 7px;
+    width: 115px;
+    height: 25  px;
+    text-align: left;
+}
+
+#selected1:hover{
+    color:rgb(121, 121, 121);
+}
+
+.nav_menu{
+    width: 146px;
+    height: 758px;
+    align-items: flex-start;
+    background-color: #e0c6d0;
+    display: flex;
+}
+
+.modify{
+    flex-direction: column;
+    display: flex;
+}
+
+.modify a {
+    margin: 0px;
+    padding: 8px 7px;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 16px;
+}
+
+.modify ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 40px;
+}
+
+#firstLink{
+    height: -10px;
+}
+
+#thirdLink{
+    height: -10px;
+}
+/* ASIDE */
+.background_layout2{
+    width: 256px;
+    height: 758px;
+    background-color:#fcd0e0;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+
+.background_layout2 > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 238px;
+    width: 238px;
+}
+
+.background_layout2 div div{
+    width: 100px;
+    height: 100px;
+    background-color: #864c61;
+}
+
+#container_area{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_container_layout2{
+    width: 598px;
+    height: 758px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.left_container_layout2 div:nth-child(1){
+    width: 270px;
+    height: 324px;
+    background-color: #864c61;
+}
+
+.left_container_layout2 div:nth-child(2){
+    width: 270px;
+    height: 254;
+    background-color: #864c61;
+    margin-bottom: 100px;
+}
+
+.left_container_layout2 div:nth-child(3){
+    width: 270px;
+    height: 388px;
+    background-color: #864c61;
+}
+
+.left_container_layout2 div:nth-child(4){
+    width: 270px;
+    height: 365px;
+    background-color: #864c61;
+    margin-top: -70px;
+}
+
+/* fixed footer */
+#fixed{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
