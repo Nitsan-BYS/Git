@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <title>Add a New Report</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="menu">
+                <a href="#"></a>
+            </div>
+                <a href="#"></a>
+                <div class="breadcrumb1">
+                    <!-- <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reportList.html">Reports List</a></li>
+                        <li>Add New Report</li>
+                    </ul> -->
+                </div>
+            <!-- <a href="#"></a> -->
+            <div id="image"></div>
+        </header>
+        <aside>
+            <div class="breadcrumb1">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reportList.html">Reports List</a></li>
+                    <li>Add New Report</li>
+                </ul>
+            </div>
+            </aside>
+        <nav class="clear">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="selected">Reports List</a></li>
+                <li><a href="#">Black List</a></li>
+                <li><a href="#">Shifts</a></li>
+                <li><a href="#">Contact List</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <form action="http://se.shenkar.ac.il/students/2020-2021/web1/dev_205/add_report.php" method="GET"
+            autocomplete="on">
+            <main>
+                <div id="arrange">
+                    <br>
+                    <article>
+                        <h4>Add a New Report</h4>
+                        <br>
+                        <br>
+                        <label>Number of Report: </label>
+                        <input id="size_num" class="form-control" type="tel" name="number" pattern="[0-9]{3}" title="Report number must contain 3 digits according to current reports list" required>
+                        <br>
+                        <label for="date_time">Date (DD.MM.YY), Start Hour (HH:MM), End Hour (HH:MM): </label>
+                        <input id="size_date" class="form-control" type="datetime-local" name="date_time" required></textarea>
+                        <br>
+                        <label for="street">Street Name: </label>
+                        <input id="size_name" class="form-control" type="text" name="street" pattern="[A-Za-z]{2,}" title="Street name must contain only letters and minimum 2 letters" required>
+                        <br>
+                        <label for="streetnum">Street Number: </label>
+                        <input id="size_st" class="form-control" type="tel" name="streetnum" pattern="[0-9]{1,3}" title="Street Number must be between 1-3 digits" required>
+                        <br>
+                        <label for="apt">Apt. Number: </label>
+                        <input id="size_apt" class="form-control" type="text" name="apt" pattern="[0-9]{1,2}" title="Apartment must contain only digits and at least 1 digit and maximum 2 digits" required>
+                        <label for="city">City: </label>
+                        <input id="size_city" class="form-control" type="text" name="city" pattern="[A-Za-z]{2,}" title="City must contain only letters and minimum 2 letters" required>
+                        <br>
+                    </article>
+                    <article>
+                        <label for="details">Details: </label>
+                        <textarea class="form-control" name="details" rows="4" columns="60" required></textarea>
+                        <br>
+                        <label id="none" for="more_info">Add Documents- Images, Recordings, Videos: </label>
+                        <textarea class="form-control" name="more_info" rows="3" columns="60"></textarea>
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="Add Report">
+                    </article>   
+                </div>
+            </main>
+        </form>
+        <footer class="clear">
+            <p>Share Us!</p>&nbsp;
+            <a href="#"><img class="clear" src="images/what.png" alt="whatsapp" title="whatsapp" id="whatsup"></a>&nbsp;
+            <a href="#"><img class="clear" src="images/facebook1.png" alt="facebook" title="facebook"></a>
+            <p>&#169;Save Our Dogs</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

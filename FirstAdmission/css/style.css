@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header,main,nav, footer{
+    display: block;
+}
+header, footer{
+    width: 100%;
+}
+
+#secondTitle, h5, h4, h2, h3{
+    color: rgb(78, 78, 78);    
+}
+header{
+    display: flex;
+    height: 150px;
+    justify-content:left;
+    align-items: center;
+    background-color: #f7c9da;
+}
+#image{
+    display: block;
+    background-image: url("../images/user2.png");
+    background-size: 65px 65px;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+}
+
+header > a{
+    background-image: url("../images/logonew.png");
+    display: block;
+    width: 900px;
+    height: 47px;
+    background-repeat: no-repeat;
+}
+header #menu{
+    background-image: url(../images/hamburger.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* background-color: black; */
+    /* display: none; */
+    visibility: hidden;
+}
+aside{
+    background-color: #f7c9da;
+    display: flex;
+    height: 20px;
+    justify-content:left;
+    align-items: center;
+}
+aside > .breadcrumb1{
+    width:280px;
+    margin-left: 180px;
+}
+ul.breadcrumb {
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size:0.85em;
+    color: rgb(107, 107, 107);;
+}
+  ul.breadcrumb li+li:before {
+    color: rgb(107, 107, 107);
+    font-size:0.85em;
+    content: "\>\00a0";
+}  
+  ul.breadcrumb li a {
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+  }
+ul.breadcrumb li a:hover {
+    color: black;
+    text-decoration: none;
+  }
+.clear{
+    clear:both;
+}
+nav{
+    background-color: #f7c9da;
+    float: left;
+    width: 180px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    padding-left: 0rem;
+}
+
+nav ul li{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 115px;
+    width: 200px;
+}
+
+#selected{
+    background-color: white;
+    padding:47.7px;
+}
+
+#selected1{
+    background-color: white;
+    padding:57.5px;
+    width: 90px;
+
+}
+
+nav > ul > li > a{
+    line-height: 0px;
+    text-decoration: none;
+    font-size:1.2em;
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: black;
+}
+label::after {
+    content: "*";
+    color: red;
+}
+#none::after{
+    content: none;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#horizontaldiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#size_num{
+    width: 100px;
+}
+
+#size_date{
+    width: 220px;
+}
+#size_name{
+    width: 100px;
+}
+#size_st{
+    width: 100px;
+}
+#size_apt{
+    width: 100px;
+}
+#size_city{
+    width: 100px;
+}
+main{
+    height: 750px;
+    width: 81%;
+    float: right;
+
+}
+
+.width{ 
+    width:50%; 
+
+ } 
+h2{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#rep{
+    margin-left: 0px;
+}
+#myInput {
+    background-image: url("../images/search.png");
+    background-position: 9px 9px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    font-size: 1em;
+    padding: 7px 20px 5px 40px;
+    border: 1.5px solid #ddd;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    float: right;
+    width:170px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+article{
+    width: 47%;
+    margin-left: 20px;
+}
+#arrange{
+    justify-content: space-around;
+    display: flex;  
+    align-items: center;
+    margin-top: 20px;
+}
+#img{
+    background-image: url(../images/sad_dog1.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+#oded{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 300px;
+}
+h5{
+
+    margin-left: 70px;
+}
+#name{
+    background-image: url(../images/bunky.png);
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 40px;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+#secondTitle, h5, h4, h3,h2, span{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: white;
+    height: 50px;
+    justify-content: center;
+}
+span{
+    margin-top: 10px;
+    margin-right:10px;
+}
+footer img{
+    display:block;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: 25px;
+}
+footer > p{
+    display: inline-block;
+    height: 50px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+#whatsup{
+    width: 27px;
+    height: 27px;
+    display:block;
+    float: left;
+    margin-top: 29px;
+}
+/* --------------------------------------------------------------- */
+table{
+    position: relative;
+    width: 80px;
+    left:30px;
+    top: 80px;
+}
+.warning{
+    background-image: url("../images/warning.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left:15px;
+}
+.minor{
+    background-image: url("../images/minor.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left:15px;
+}
+.moderate{
+    background-image: url("../images/moderate.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left:15px;   
+}
+.edit{
+    background-image: url("../images/edit.png");
+    background-repeat: no-repeat;
+    height: 22px;
+    justify-self: center;
+}
+.cointener{
+height: 25px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+width: 55px;
+}
+.view{
+    background-image: url("../images/view.png");
+    background-repeat: no-repeat;
+    height: 22px;
+}
+.legend{
+    display: flex;
+    height: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+h3{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#move{
+    margin-top:50px;
+    margin-left: 20px;
+}
+#move p{
+    margin-top:20px ;
+}
+.blacklist{
+    float: right;
+    margin-top: -120px;
+    position: absolute;
+    right: 180px;
+    bottom: 335px;
+    border: 1px solid #ddd;
+    width: auto;
+    padding: 7px;
+}
+#images{
+    margin-left: 150px;
+}
+/* CDN */
+.substrate {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  } 
+  .substrate-bg {
+    background: rgba(0, 0, 0, .9);
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+  }
+  /* CDN END */
+div .align{
+    float: left;
+    right: 5px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.horizontaldiv > div{
+    width: 200px;
+}
+#secondTitle{
+    margin-top: 70px;
+    color: rgb(255, 139, 158);
+}
+#images{
+    width:20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+#add{
+    /* position: relative; */
+    background-image: url("../images/add.png");
+    background-repeat: no-repeat;
+    width:30px;
+    height:30px;
+    margin-left: 40px;
+    /* left:50px; */
+}
+@media only screen and (max-width: 700px) {
+    
+    header, body, nav{
+        width:100%;
+    }
+    header{
+        height: 85px;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+    }
+    header a{
+        width: 300px;
+        margin-left: 50px;
+    }
+    .breadcrumb1{
+        display: none;
+    }
+    .blacklist{
+        margin-top: 0px;
+        left: 250px;
+        top: 400px;
+        border: none;
+        width: 250px;
+    }
+    #oded{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 80px; 
+    }
+    #arrange{
+        flex-direction: column-reverse;
+    }
+    article{
+        margin-left: 0 auto;
+        margin-right: 180px;
+    }
+    #myInput {
+        background-image: url("../images/search.png");
+        background-repeat: no-repeat;
+        display: none;
+      }
+    #image{
+        margin-left: 70px;
+    }
+    ul > li > a{
+        margin-bottom:60px;
+    }
+    nav{
+        height: 60px;
+        width: 100%; 
+        position: fixed; 
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        border-top: 1px solid #ccc;
+        font-size: 0.85em;
+    }
+    main{
+        height: 700px;
+        width: 100%;
+    }
+    ul{
+        display: flex;
+    }
+    footer{
+        display: none;
+    }
+    ul li{
+        display: block;
+        display: flex;
+        width: 25px;
+        height:60px;
+        left: 160px;
+        text-align: center;
+    }
+    li > a > p{
+        margin-top: 2px;
+        color: rgb(107, 107, 107);
+        font-size: 0.85em;
+    }
+    nav a:hover{
+        color: rgb(107, 107, 107);
+    
+    }
+    #selected_mobile{
+        color: black;
+    }
+    .legend{
+        margin: 10px;
+    }
+   table{
+       position: unset;
+       left:0px;
+   }
+   #img{
+    background-image: url(../images/sad_dog.png);
+    width: 320px;
+    height: 170px;
+    }
+    aside{
+        background-color: white;
+    }
+    header #menu{
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        visibility: visible;
+
+    }
+    
+}

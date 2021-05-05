@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <title>Reports List</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <div id="menu">
+                <a href="#"></a>
+            </div>
+            <a href="#"></a>
+            <div id="image"></div>
+        </header>
+        <aside>
+            <div class="breadcrumb1">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Reports List</li>
+                </ul>
+            </div>
+            </aside>
+        <nav class="clear">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="selected">Reports List</a></li>
+                <li><a href="#">Black List</a></li>
+                <li><a href="#">Shifts</a></li>
+                <li><a href="#">Contact List</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <form action="http://se.shenkar.ac.il/students/2020-2021/web1/dev_205/add_report.php" method="GET"
+            autocomplete="on">
+            <main>
+                <h2 class="clear">Reports List</h2>
+               
+                <input type="text" id="myInput" class="clear" placeholder="Search" title="Search">
+                <div class="legend">
+                 
+                    <img src="images/warning.png">
+                    <p>&nbsp;= critical&nbsp;&nbsp;</p>
+                    <img src="images/minor.png">
+                    <p>&nbsp;= minor&nbsp;&nbsp;</p>
+                    <img src="images/moderate.png">
+                    <p>&nbsp;= moderate</p>
+                    <a href="reportform.html"><div id="add"></div></a>
+                </div>
+                <table class="table table-sm">
+                    <thead>
+                        <tr class="table table-striped">
+                            <th scope="col">Report</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Saverity</th>
+                            <th scope="col">View/Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-light">
+
+                            <td>505</td>
+                            <td>15.02.21</td>
+                            <td>56 Hayarkon St.,Apt. 10, Tel Aviv</td>
+                            <td><div class=warning></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                        </tr>
+                        <tr>
+                            <td>504</td>
+                            <td>07.02.21</td>
+                            <td>45 Hanasi St.,Apt. 08, Rishon Letzion</td>
+                            <td><div class="moderate"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                            <td></td>
+                        </tr>
+                        <tr class="table-light">
+                            <td>503</td>
+                            <td>01.02.21</td>
+                            <td>01 Ye'elim St., Apt. 01, Yahud</td>
+                            <td><div class="warning"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>502</td>
+                            <td>30.01.21</td>
+                            <td>109 Rimonim St., Apt. 46, Savion</td>
+                            <td><div class="minor"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <td>501</td>
+                            <td>02.02.20</td>
+                            <td>300 Haroim St., Oron Square, Nes Tziona</td>
+                            <td><div class="moderate"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>500</td>
+                            <td>25.01.21</td>
+                            <td>64 Rambam St., Apt. 09, Be'er Sheva</td>
+                            <td><div class="minor"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <td>499</td>
+                            <td>13.01.21</td>
+                            <td>25 Shani Eliyahu St., Apt. 19, Tel Aviv</td>
+                            <td><div class="moderate"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>498</td>
+                            <td>28.12.20</td>
+                            <td>112 Moshe Dayan St., Community Center, Modi'in</td>
+                            <td><div class="warning"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+                            
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <td>497</td>
+                            <td>14.12.20</td>
+                            <td>03 Oley Hagardom St., Apt. 02, Haifa</td>
+                            <td><div class="warning"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>496</td>
+                            <td>06.12.20</td>
+                            <td>17 Hayordim St., Apt. 16, Gedera</td>
+                            <td><div class="warning"></div></a></td>
+                            <td><a href="current_rep.html?prodReport=1"><div class="cointener"><div class="view"></div></a><a href="#"><div class="edit"></div></a></div></td>
+
+                            <td></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </form>
+        <footer class="clear">
+            <p>Share Us!</p>&nbsp;
+            <a href="#"><img class="clear" src="images/what.png" alt="whatsapp" title="whatsapp" id="whatsup"></a>&nbsp;
+            <a href="#"><img class="clear" src="images/facebook1.png" alt="facebook" title="facebook"></a>
+            <p>&#169;Save Our Dogs</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
