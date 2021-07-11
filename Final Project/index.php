@@ -14,22 +14,7 @@ mysqli_close($connection);
 
             <main class="home-main">
                 <article class="article-margin">
-                    <h2 class="page-title">3 Reports handled</h2>
-                    <?php while($row = mysqli_fetch_array($result)) { ?>
-                    <div class="report-line">
-                        <img src=<?php if($row["severity"]==1) echo "images/warning.png";if($row["severity"]==2) echo "images/moderate.png";if($row["severity"]==3) echo "images/minor.png";?> alt='critical' title='critical'>
-                        <div class="report-line-text">
-                            <p>#<?php echo $row["rep_num"]?></p>
-                            <?php echo db_format_to_display_format($row["address"])?>
-                        </div>
-                    </div>
-                    <?php } ?>
-
-                    <?php
-                        include 'includes/report_warning_types.php';
-                    ?>
-
-                    <h3 class="home-title">Dogs rescued</h3>
+                <h3 class="home-title">Dogs rescued</h3>
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -55,7 +40,23 @@ mysqli_close($connection);
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
+                    </div>    
+                <h2 class="page-title">3 Reports handled</h2>
+                    <?php while($row = mysqli_fetch_array($result)) { ?>
+                    <div class="report-line">
+                        <img src=<?php if($row["severity"]==1) echo "images/warning.png";if($row["severity"]==2) echo "images/moderate.png";if($row["severity"]==3) echo "images/minor.png";?> alt='critical' title='critical'>
+                        <div class="report-line-text">
+                            <p>#<?php echo $row["rep_num"]?></p>
+                            <?php echo db_format_to_display_format($row["address"])?>
+                        </div>
                     </div>
+                    <?php } ?>
+
+                    <?php
+                        include 'includes/report_warning_types.php';
+                    ?>
+
+                    
                 </article>
             </main>
 
