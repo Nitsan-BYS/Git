@@ -19,7 +19,8 @@
         <li><a href="#"><img src='images/blacklistlight.png'>
                 <p>Black List</p>
             </a></li>
-        <li><a href="shifts.php"><img src='images/shifts.png'>
+            <li id="<?php if ($path == '/shifts.php') echo "selected2"; ?>">
+            <a href="shifts.php"><img src='images/shifts.png'>
                 <p>Shifts</p>
             </a></li>
     </ul>
