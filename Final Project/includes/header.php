@@ -1,5 +1,5 @@
 <?php 
-    include_once 'includes/DB.php';
+    include_once 'DB.php';
     session_start();
 
 	$id=$_SESSION["id"];
@@ -76,12 +76,57 @@
             <div class='breadcrumb1'>
                 <ul class='breadcrumb'>
                 <?php
-                    include_once 'includes/breadcrumb.php';
+                   $path = strtok($_SERVER["REQUEST_URI"], '?');
+                //    echo $path;
+                   if (strpos($path,'/index.php') !== false) {
+                       echo '<li>Home</li>';
+                   }
+                   
+                   if (strpos($path,'/reportlist.php') !== false) {
+                       echo '<li><a href="index.php">Home</a></li><li>Report List</li>';
+                   }
+                   
+                   if (strpos($path,'/current_report.php') !== false) {
+                       echo '<li><a href="index.php">Home</a></li><li><a href="reportlist.php">Report List</a></li><li>Current Report</li>';
+                   }
+                   if (strpos($path,'/shifts.php') !== false) {
+                       echo '<li><a href="index.php">Home</a></li><li>Shifts</li>';
+                   }
+                   if (strpos($path,'/reportform.php') !== false) {
+                       echo '<li><a href="index.php">Home</a></li><li><a href="reportlist.php">Report List</a></li><li>Report Form</li>';
+                   }
+                   if (strpos($path,'/edit_user.php') !== false){
+                       echo '<li><a href="index.php">Home</a></li><li>Edit User</li>';
+                   }
                 ?>
                 </ul>
             </div>
         </aside>
         <div class='responsive'>
-            <?php
-                include 'includes/navbar.php'
-            ?>
+        <?php
+    $path = strtok($_SERVER["REQUEST_URI"], '?');
+?>
+
+<nav>
+    <ul>
+    
+        <li id="<?php if (strpos($path,'/index.php') !== false) echo "selected2"; ?>">
+            <a href="index.php"><img src='images/homelight.png'>
+                <p>Home</p>
+            </a>
+        </li>
+        <li id="<?php if (strpos($path,'/reportlist.php') !== false || strpos($path,'/current_report.php') !== false) echo "selected2"; ?>">
+            <a href="reportlist.php">
+                <img src='images/d.png'>
+                <p>Reports List</p>
+            </a></li>
+        <li><a href="#"><img src='images/blacklistlight.png'>
+                <p>Black List</p>
+            </a></li>
+            
+            <li id="<?php if (strpos($path,'/shifts.php') !== false) echo "selected2"; ?>">
+            <a href="shifts.php"><img src='images/shifts.png'>
+                <p>Shifts</p>
+            </a></li>
+    </ul>
+</nav>
